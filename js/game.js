@@ -4,6 +4,7 @@ const maxHits = 10;
 let hits = 0;
 let hitsMiss = 0;
 let firstHitTime = 0;
+let firstClick = 0;
 
 
 function round() {
@@ -14,7 +15,7 @@ function round() {
   $(divSelector).addClass("target");
   $(".target").text(hits + 1);
 
-  if (hits === 1) {
+  if (firstClick === 1) {
     firstHitTime = getTimestamp();
   }
 
@@ -55,6 +56,7 @@ function init() {
     $("#start-game").hide();
   
     $("#button-reload").removeClass('d-none');
+    let firstClick = 1;
   });
 
   $("#button-reload").click(function() {
