@@ -14,7 +14,7 @@ function round() {
   $(divSelector).addClass("target");
   $(".target").text(hits + 1);
 
-  if (firstHitTime === 0) {
+  if (hits === 1) {
     firstHitTime = getTimestamp();
   }
 
