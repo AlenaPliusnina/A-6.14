@@ -9,4 +9,4 @@
 
 Реализация:
 
-   - https://alenapliusnina.github.io/A-6.14/
+   - https://alenapliusnina.github.io/Game_Collect_10_green_squares/
